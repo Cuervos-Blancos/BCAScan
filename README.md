@@ -1,4 +1,7 @@
 # BCAScan
+
+BarCodeAmericanaScanner
+
 Aplicacion movil en React Native para gestionar el control de pagos en alumnos mediante su numero de alumno
 
 
