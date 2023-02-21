@@ -1,2 +1,3 @@
 - Dentro de la carpeta Screen; crear otras carpetas para cada pantalla (Home, Camara, Teclado)
 
+https://github.com/DavidAvila502/react_native_podedexApp_D/blob/main/App.js
