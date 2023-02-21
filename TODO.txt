@@ -1,0 +1,2 @@
+- Dentro de la carpeta Screen; crear otras carpetas para cada pantalla (Home, Camara, Teclado)
+
