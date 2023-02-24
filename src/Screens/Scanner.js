@@ -21,7 +21,7 @@ export default function Scan() {
   // Función que gestionara el comportamiento cuando se detecte un código, en este caso establecer una variable de estado que le dice a la app que ya se ha escaneado un código y mostrar un alert con los datos del mismo
   const handleBarCodeScanned = ({ type, data }) => {
     setScanned(true);
-    alert(`Bar code with type ${type} and data ${Linking.openURL('${data}')} has been scanned!`);
+    alert(`Bar code with type ${type} and data ${Linking.openURL(`${data}`)} has been scanned!`);
   };
 
   //Validaciones que nos permitan determinar que hacer si el permiso de la cámara no se ha obtenido aún o ha sido denegado
