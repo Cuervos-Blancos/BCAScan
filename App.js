@@ -4,23 +4,42 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 //Importa las rutas personalizadas
 // import Home from './src/screens/Home';
-import Scan from './src/Screens/Scanner';
+// import Scan from './src/Screens/Scanner';import { TouchableOpacity, Alert } from "react-native";
+import AppNavigation from './src/Navigation/AppNavigation';
 
-const Stack = createStackNavigator();
+// const Stack = createStackNavigator();
 
-function App() {
-    return(
-        <Stack.Navigator>
-            <Stack-Screen name="Scanner" component={Scan}/>
-            {/* <Stack-Screen name="Home" component={Home} /> */}
-        </Stack.Navigator>
-    )
-}
+// function App() {
+//     return(
+//         <Stack.Navigator>
+//             <Stack-Screen name="Scanner" component={Scan}/>
+//             {/* <Stack-Screen name="Home" component={Home} /> */}
+//         </Stack.Navigator>
+//     )
+// }
 
-export default () => {
+// export default () => {
+//     return (
+//         <NavigationContainer>
+//             <App />
+//         </NavigationContainer>
+//     )
+// }
+
+export default function App() {
     return (
+      <View style={styles.container}>
         <NavigationContainer>
-            <App />
+          <AppNavigation />
         </NavigationContainer>
-    )
-}
+  
+        {/* <StatusBar style="auto" /> */}
+      </View>
+    );
+  }
+  
+  const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+    },
+  });
