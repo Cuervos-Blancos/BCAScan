@@ -15,7 +15,7 @@ const Stack = createStackNavigator();
 const AppNavigation = () => {
   return (
     <Stack.Navigator>
-      <Stack.Screen
+      {/* <Stack.Screen
         name="Menu"
         component={Home}
         options={{ headerShown: false }}
@@ -24,7 +24,7 @@ const AppNavigation = () => {
         name="Scaner"
         component={Scan}
         options={{ headerShown: false }}
-      />
+      /> */}
       <Stack.Screen
         name="Teclado"
         component={TecladoScreen}
