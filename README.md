@@ -22,10 +22,9 @@ Aplicacion movil en React Native para gestionar el control de pagos en alumnos m
 
 ## Instalacion
 ```bash
-yarn 
-yarn install
-    yarn ios // to run ios app
-    yarn android // run android app
+npm i 
+    expo start ios // to run ios app
+    expo android // run android app
 ```
 
 Acknowledgments
