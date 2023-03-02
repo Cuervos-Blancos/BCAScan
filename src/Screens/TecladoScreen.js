@@ -1,6 +1,8 @@
 import React from 'react';
 import { View, StyleSheet, Button } from 'react-native';
 
+import { Styles } from '../Components/Styles';
+
 const TecladoScreen = () => {
     return (
         <View>
