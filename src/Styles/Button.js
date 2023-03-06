@@ -1,3 +1,5 @@
+// Este modulo contiene los estilos para el diseño de los botones 
+
 import { useContext } from "react";
 import { TouchableOpacity, Text } from "react-native";
 

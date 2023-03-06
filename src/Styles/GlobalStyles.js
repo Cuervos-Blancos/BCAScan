@@ -1,3 +1,5 @@
+// Este modulo contiene los estilos para el diseño del teclado numerico en pantallla
+
 import { StyleSheet } from "react-native";
 import { myColors } from "./Colors"; 
 

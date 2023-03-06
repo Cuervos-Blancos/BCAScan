@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, StyleSheet, Text } from 'react-native';
 
+// Importamos las rutas personalizadas
 import { Styles } from '../Styles/GlobalStyles';
 import { myColors } from '../Styles/Colors';
 import Button from '../Styles/Button';
@@ -13,7 +14,7 @@ export default function TecladoScreen() {
     // const [operation, setOperation] = React.useState("");
     // const [result, setResult] = React.useState < Number | null > (null);
 
-    // Iniciamos asignando el numero tipado a la cadena de texto
+    //  Iniciamos asignando el numero tipado a la cadena de texto, con cada numero nuevo lo inserta a la derecha
     const handleNumberPress = (buttonValue: string) => {
         if (firstNumber.length < 15) {
             setFirstNumber(firstNumber + buttonValue);
@@ -70,6 +71,7 @@ export default function TecladoScreen() {
                 </Text> */}
                 {firstNumberDisplay()}
             </View>
+            {/* Vista del teclado numerico en pantalla */}
             <View style={Styles.row}>
                 <Button title="C" isGray onPress={clear} />
                 {/* <Button title="+/-" isGray onPress={() => handleOperationPress("+/-")} />
