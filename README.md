@@ -30,4 +30,5 @@ npm i
 Acknowledgments
 ---------------
 * https://www.youtube.com/watch?v=3mMyd3r2LRc
-
+* https://www.youtube.com/watch?v=AnjyzruZ36E&ab_channel=Indently
+* https://www.youtube.com/watch?v=q8z1v9IsvQk&ab_channel=C%C3%B3digoAV

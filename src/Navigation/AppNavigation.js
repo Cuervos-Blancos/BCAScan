@@ -1,8 +1,8 @@
 import React from "react";
 
 //Importamos las rutas personalizadas
-import Home from "../Screens/Home";
-import Scan from "../Screens/Scanner";
+import HomeScreene from "../Screens/HomeScreen";
+import ScanScreen from "../Screens/ScannerScreen";
 import TecladoScreen from "../Screens/TecladoScreen";
 
 // Importamos el createStackNavigator
@@ -17,12 +17,12 @@ const AppNavigation = () => {
     <Stack.Navigator>
       {/* <Stack.Screen
         name="Menu"
-        component={Home}
+        component={HomeScreen}
         options={{ headerShown: false }}
       />
       <Stack.Screen
         name="Scaner"
-        component={Scan}
+        component={ScannerScreenn}
         options={{ headerShown: false }}
       /> */}
       <Stack.Screen
