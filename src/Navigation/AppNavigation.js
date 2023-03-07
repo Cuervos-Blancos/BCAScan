@@ -41,5 +41,4 @@ const AppNavigation = () => {
 };
 
 //Exportamos funcion de navegacion.
-
 export default AppNavigation;
