@@ -6,6 +6,7 @@ import { View, StyleSheet } from "react-native";
 // import Home from './src/screens/Home';
 // import Scan from './src/Screens/Scanner';import { TouchableOpacity, Alert } from "react-native";
 import AppNavigation from "./src/Navigation/AppNavigation";
+import MyTabs from "./src/Navigation/BottomTabNavigation";
 
 // const Stack = createStackNavigator();
 
@@ -28,13 +29,16 @@ import AppNavigation from "./src/Navigation/AppNavigation";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <NavigationContainer>
-        <AppNavigation />
-      </NavigationContainer>
+    // <View style={styles.container}>
+    //   <NavigationContainer>
+    //     <AppNavigation />
+    //   </NavigationContainer>
 
-      {/* <StatusBar style="auto" /> */}
-    </View>
+    //   {/* <StatusBar style="auto" /> */}
+    // </View>
+      <NavigationContainer>
+        <MyTabs />
+      </NavigationContainer>
   );
 }
 

@@ -7,6 +7,7 @@ import TecladoScreen from "../Screens/TecladoScreen";
 
 // Importamos el createStackNavigator
 import { createStackNavigator } from "@react-navigation/stack";
+import HomeScreen from "../Screens/HomeScreen";
 
 // Creamos el Stack ejecutando la funcion
 const Stack = createStackNavigator();
@@ -15,21 +16,21 @@ const Stack = createStackNavigator();
 const AppNavigation = () => {
   return (
     <Stack.Navigator>
-      {/* <Stack.Screen
+      <Stack.Screen
         name="Menu"
         component={HomeScreen}
         options={{ headerShown: false }}
       />
-      <Stack.Screen
+      {/* <Stack.Screen
         name="Scaner"
         component={ScannerScreenn}
         options={{ headerShown: false }}
       /> */}
-      <Stack.Screen
+      {/* <Stack.Screen
         name="Teclado"
         component={TecladoScreen}
         options={{ headerShown: false }}
-      />
+      /> */}
       {/* <Stack.Screen
                 name="Login"
                 component={LoginScreen}

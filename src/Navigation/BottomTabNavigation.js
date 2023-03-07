@@ -8,7 +8,7 @@ import TecladoScreen from '../Screens/TecladoScreen';
 
 const Tab = createBottomTabNavigator();
 
-function MyTabs() {
+export default function MyTabs() {
   return (
     <Tab.Navigator
       initialRouteName="Home"
@@ -16,7 +16,7 @@ function MyTabs() {
         tabBarActiveTintColor: '#F8F8F8',
       }}
     >
-      <Tab.Screen
+      {/* <Tab.Screen
         name="Feed"
         component={HomeScreen}
         options={{
@@ -25,7 +25,7 @@ function MyTabs() {
             <MaterialCommunityIcons name="home" color={color} size={size} />
           ),
         }}
-      />
+      /> */}
       <Tab.Screen
         name="Camara"
         component={ScanScreen}
@@ -50,5 +50,3 @@ function MyTabs() {
     </Tab.Navigator>
   );
 }
-
-export default MyTabs();
