@@ -11,14 +11,14 @@ const Tab = createBottomTabNavigator();
 function MyTabs() {
   return (
     <Tab.Navigator
-      initialRouteName="Feed"
+      initialRouteName="Home"
       screenOptions={{
-        tabBarActiveTintColor: '#e91e63',
+        tabBarActiveTintColor: '#F8F8F8',
       }}
     >
       <Tab.Screen
         name="Feed"
-        component={Feed}
+        component={HomeScreen}
         options={{
           tabBarLabel: 'Home',
           tabBarIcon: ({ color, size }) => (
@@ -27,10 +27,10 @@ function MyTabs() {
         }}
       />
       <Tab.Screen
-        name="Notifications"
-        component={Notifications}
+        name="Camara"
+        component={ScanScreen}
         options={{
-          tabBarLabel: 'Updates',
+          tabBarLabel: 'Camara',
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="bell" color={color} size={size} />
           ),
@@ -38,10 +38,10 @@ function MyTabs() {
         }}
       />
       <Tab.Screen
-        name="Profile"
-        component={Profile}
+        name="Teclado"
+        component={TecladoScreen}
         options={{
-          tabBarLabel: 'Profile',
+          tabBarLabel: 'Teclado',
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="account" color={color} size={size} />
           ),
