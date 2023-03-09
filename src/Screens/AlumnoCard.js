@@ -4,7 +4,7 @@ import {View, StyleSheet} from 'react-native';
 const AlumnoCard = () => {
     return (
         <View>
-            
+            // Grid
         </View>
     );
 }
