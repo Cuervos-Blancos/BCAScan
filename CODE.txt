@@ -1,0 +1,63 @@
+import React from 'react';
+import { StyleSheet, Text, View, Button } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+
+function HomeScreen({ navigation }) {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>Pantalla de inicio</Text>
+      <Button
+        title="Ir a la cámara"
+        onPress={() => navigation.navigate('Camera')}
+      />
+    </View>
+  );
+}
+
+function CameraScreen({ navigation }) {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>Pantalla de la cámara</Text>
+      <Button
+        title="Regresar a la pantalla de inicio"
+        onPress={() => navigation.reset({
+          index: 0,
+          routes: [{ name: 'Home' }],
+        })}
+      />
+    </View>
+  );
+}
+
+const Stack = createStackNavigator();
+
+export default function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Camera" component={CameraScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#fff',
+  },
+  title: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    marginBottom: 20,
+  },
+});
+
+
+
+
+En la función CameraScreen, he modificado el onPress del botón de regreso a la pantalla de inicio para que utilice la función navigation.reset() en lugar de navigation.goBack(). La función reset() permite volver al inicio de la pila de navegación y eliminar todas las pantallas que hayan sido apiladas en el camino. Esto hace que la pantalla de la cámara se cierre y regrese a la pantalla de inicio.
