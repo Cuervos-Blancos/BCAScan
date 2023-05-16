@@ -19,7 +19,6 @@ const AlumnoCard = ({ numeroAlumno }) => {
         <View>
             <Text>Nombre: {alumnoData.nombre}</Text>
             <Text>Apellido: {alumnoData.apellido}</Text>
-            <Text>Edad: {alumnoData.edad}</Text>
         </View>
     );
 };

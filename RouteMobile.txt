@@ -1,0 +1,37 @@
+Retroalimentando:
+	La API/ruta deberá realizar la consulta con el "NUMEROALUMNO" obtenido del movil y retornar (creo en un json) los datos basicos del alumno: NOMBRE, APELLIDOS, (tabla ALUMNOS) NUMEROALUMNO, PAGADO, PERIODO, MES (tabla ALUMNOS_CXC).
+
+Al hacer la consulta (ApiRest de Cuervos) arroja ya los datos mencionados anteriormente y con su "historial", aparecen ya todos los periodos que el NUMEROALUMNO tiene registrado en la base.
+Dentro de la ruta al parecer solo habrá dos tablas a consultar; ALUMNOS_CXC, ALUMNOS.
+
+Debe hacer:
+	*Retornar los datos del NUMEROALUMNO.
+	*Validar si algun mes anterior está con adeudo (no pagado), contar cuantos.
+	*Validar si el mes actual está con adeudo (no pagado).
+		*El mes actual en realidad no puede estar con adeudo porque por ley tienen hasta el ultimo dia para hacer el pago, entonces si solamente tienen dentro de la base que el mes actual no está pagado, y aun no termina dicho mes actual, entonces no puede marcar como adeudo (no pagado).
+	*Si es posible: Datos del tutor, CORREO, TELEFONO
+
+Hay un elemento llamado "PERIODO", a lo que entendí es que está "dividido" en dos, por semestre y cuatrimestre. Cada periodo tiene una fecha INICIO y una FINAL.
+	Semestre:
+	Pongamos de ejemplo el periodo actual: 31.
+	Tendra dentro del sistema el periodo 31 repetido 6 veces (semestre), dentro de este periodo habrá 6 meses. El sistema registra los 6 meses (ejemplo 1 al 6) y si estamos en el mes 4, y estan pagados los 3 meses antes (1 al 3), el mes 4 (actual) y 5, 6 estaran marcados como no pagado.  
+
+	Cuatrimestre:
+	Se puede entender similar al semestre, solo que aqui serán 4 meses.
+
+
+No sé si estas validaciones del periodo para saber los adeudos (para realizar el semaforo) se deban hacer dentro de la consulta a la base, o dentro del codigo del aplicativo.
+
+Recordar:
+            IF (MES = 01) THEN MES_TEXTO = "SEPTIEMBRE";
+            IF (MES = 02) THEN MES_TEXTO = "OCTUBRE";
+            IF (MES = 03) THEN MES_TEXTO = "NOVIEMBRE";
+            IF (MES = 04) THEN MES_TEXTO = "DICIEMBRE";
+            IF (MES = 05) THEN MES_TEXTO = "ENERO";
+            IF (MES = 06) THEN MES_TEXTO = "FEBRERO";
+            IF (MES = 07) THEN MES_TEXTO = "MARZO";
+            IF (MES = 08) THEN MES_TEXTO = "ABRIL";
+            IF (MES = 09) THEN MES_TEXTO = "MAYO";
+            IF (MES = 10) THEN MES_TEXTO = "JUNIO";
+            IF (MES = 11) THEN MES_TEXTO = "JULIO";
+            IF (MES = 12) THEN MES_TEXTO = "AGOSTO";
