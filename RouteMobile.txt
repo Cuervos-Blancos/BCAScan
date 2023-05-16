@@ -9,7 +9,7 @@ Debe hacer:
 	*Validar si algun mes anterior está con adeudo (no pagado), contar cuantos.
 	*Validar si el mes actual está con adeudo (no pagado).
 		*El mes actual en realidad no puede estar con adeudo porque por ley tienen hasta el ultimo dia para hacer el pago, entonces si solamente tienen dentro de la base que el mes actual no está pagado, y aun no termina dicho mes actual, entonces no puede marcar como adeudo (no pagado).
-	*Si es posible: Datos del tutor, CORREO, TELEFONO
+	*Si es posible: Datos del tutor, CORREO, TELEFONO.
 
 Hay un elemento llamado "PERIODO", a lo que entendí es que está "dividido" en dos, por semestre y cuatrimestre. Cada periodo tiene una fecha INICIO y una FINAL.
 	Semestre:
