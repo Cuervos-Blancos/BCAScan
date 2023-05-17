@@ -37,7 +37,7 @@ export default function App() {
     //   {/* <StatusBar style="auto" /> */}
     // </View>
       <NavigationContainer>
-        <MyTabs />
+        <AppNavigation />
       </NavigationContainer>
   );
 }

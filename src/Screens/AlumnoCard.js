@@ -16,10 +16,11 @@ const AlumnoCard = ({ numeroAlumno }) => {
     }, [numeroAlumno]);
 
     return (
-        <View>
-            <Text>Nombre: {alumnoData.nombre}</Text>
-            <Text>Apellido: {alumnoData.apellido}</Text>
-        </View>
+        // <View>
+        //     <Text>Nombre: {alumnoData.nombre}</Text>
+        //     <Text>Apellido: {alumnoData.apellido}</Text>
+        // </View>
+        console.log(data)
     );
 };
 

@@ -5,8 +5,7 @@
 // Además, hay botones para borrar el último número, limpiar la pantalla y aceptar el número tecleado.
 
 import React, { useState } from 'react';
-import { View } from 'react-native';
-import { Button, Text } from 'react-native-elements';
+import { View, Button, Text } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 export default function TecladoScreen() {

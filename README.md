@@ -21,10 +21,13 @@ Aplicacion movil en React Native para gestionar el control de pagos en alumnos m
       Sandboxed: No
 
 ## Instalacion
+En la primera terminal se ejecuta el comando:
 ```bash
-npm i 
-    expo start ios // to run ios app
-    expo android // run android app
+npx react-native start
+```
+En la segunda terminal se ejecuta el comando:
+```bash
+npm run android
 ```
 
 Acknowledgments
