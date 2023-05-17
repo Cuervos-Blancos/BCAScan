@@ -1,5 +1,15 @@
 import React from "react";
 
+
+
+// Al utilizar este contenedor me marca los errores que te comenté, y es porque usa navegacion anidada 
+// o algo asi y no se puden enviar parametros cargados
+
+// Una opcion que tengo es que sean formularios separados, no anidados, y se trabajen asi
+
+
+
+
 //Importamos las rutas personalizadas
 import HomeScreene from "../Screens/HomeScreen";
 import ScanScreen from "../Screens/ScannerScreen";
