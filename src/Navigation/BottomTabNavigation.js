@@ -26,7 +26,7 @@ export default function MyTabs() {
           ),
         }}
       /> */}
-      <Tab.Screen
+      {/* <Tab.Screen
         name="Camara"
         component={ScanScreen}
         options={{
@@ -36,7 +36,7 @@ export default function MyTabs() {
           ),
           tabBarBadge: 3,
         }}
-      />
+      /> */}
       <Tab.Screen
         name="Teclado"
         component={TecladoScreen}
